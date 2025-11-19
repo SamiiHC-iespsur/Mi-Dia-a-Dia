@@ -1,8 +1,8 @@
 package sami.pmm.midaada
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,13 +19,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Configurar el botón "Empezar"
         val btnStart = findViewById<Button>(R.id.btnStart)
-
         btnStart.setOnClickListener {
-            // TODO: Navegar al menú principal (MenuActivity - aún no implementada)
-            // Placeholder: mostrar mensaje mientras se implementa MenuActivity
-            Toast.makeText(this, "Abriendo Menú Principal...", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MenuActivity::class.java))
         }
     }
 }
