@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mi Día a Día</string>
+    <string name="welcome_message">Bienvenido a Mi Día a Día</string>
+    <string name="button_start">Empezar</string>
 </resources>
