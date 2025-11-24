@@ -19,4 +19,17 @@
     <string name="profile_notifOff">Notificaciones desactivadas</string>
     <string name="profile_saveButton">Guardar</string>
 
+    <!-- Tareas -->
+    <string name="tasks_title">Tareas</string>
+    <string name="tasks_input_hint">Escribe una tarea</string>
+    <string name="tasks_add_button">Añadir</string>
+    <string name="tasks_filter_all">Todas</string>
+    <string name="tasks_filter_completed">Completadas</string>
+    <string name="tasks_filter_pending">Pendientes</string>
+    <string name="tasks_empty_warning">Introduce una tarea antes de añadir</string>
+
+    <!-- Toasts placeholders -->
+    <string name="toast_opening_profile">Abriendo Perfil…</string>
+    <string name="toast_opening_settings">Abriendo Ajustes…</string>
+    <string name="toast_opening_tasks">Abriendo Tareas…</string>
 </resources>
