@@ -1,5 +1,6 @@
 package sami.pmm.midaada
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -11,8 +12,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         // Listeners para cada botón del menú
         findViewById<Button?>(R.id.btnProfile)?.setOnClickListener {
-            Toast.makeText(this, "Abriendo Perfil...", Toast.LENGTH_SHORT).show()
-            // TODO: Implementar navegación al perfil
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
         findViewById<Button?>(R.id.btnTasks)?.setOnClickListener {
             Toast.makeText(this, "Abriendo Tareas...", Toast.LENGTH_SHORT).show()

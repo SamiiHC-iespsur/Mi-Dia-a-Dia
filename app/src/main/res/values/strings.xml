@@ -9,4 +9,14 @@
     <string name="menu_tasks">Tareas</string>
     <string name="menu_settings">Ajustes</string>
 
+    <!-- Perfil -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_nombreHint">Nombre</string>
+    <string name="profile_emailHint">Correo electrónico</string>
+    <string name="profile_reminderPrompt">Deseo recibir recordatorios</string>
+    <string name="profile_notifTitle">Notificaciones</string>
+    <string name="profile_notifOn">Notificaciones activadas</string>
+    <string name="profile_notifOff">Notificaciones desactivadas</string>
+    <string name="profile_saveButton">Guardar</string>
+
 </resources>
