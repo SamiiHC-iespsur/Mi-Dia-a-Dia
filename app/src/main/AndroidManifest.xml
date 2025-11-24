@@ -14,6 +14,9 @@
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,10 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- TODO: Actividad de perfil
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" /> -->
         <!-- TODO: Actividad de tareas
         <activity
             android:name=".TasksActivity"
