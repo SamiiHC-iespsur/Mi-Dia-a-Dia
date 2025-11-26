@@ -15,11 +15,10 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
         findViewById<Button?>(R.id.btnTasks)?.setOnClickListener {
-            Toast.makeText(this, "Abriendo Tareas...", Toast.LENGTH_SHORT).show()
-            // TODO: Implementar navegación a las tareas
+            startActivity(Intent(this, TareasActivity::class.java))
         }
         findViewById<Button?>(R.id.btnSettings)?.setOnClickListener {
-            Toast.makeText(this, "Abriendo Ajustes...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.toast_opening_settings), Toast.LENGTH_SHORT).show()
             // TODO: Implementar navegación a los ajustes
         }
     }
