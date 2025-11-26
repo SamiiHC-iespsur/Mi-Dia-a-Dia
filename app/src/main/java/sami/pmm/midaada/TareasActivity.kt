@@ -43,14 +43,14 @@ class TareasActivity : AppCompatActivity() {
                 if (convertView == null) {
                     row = LinearLayout(this@TareasActivity).apply {
                         orientation = LinearLayout.HORIZONTAL
-                        val pad = dp(8)
+                        val pad = 8.dp()
                         setPadding(pad, pad, pad, pad)
                     }
                     val check = CheckBox(this@TareasActivity)
                     val text = TextView(this@TareasActivity).apply {
                         layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f).apply {
-                            marginStart = dp(8)
-                            marginEnd = dp(8)
+                            marginStart = 8.dp()
+                            marginEnd = 8.dp()
                         }
                     }
                     val deleteBtn = ImageButton(this@TareasActivity).apply {
@@ -108,5 +108,5 @@ class TareasActivity : AppCompatActivity() {
     }
 
     private data class RowHolder(val check: CheckBox, val text: TextView, val delete: ImageButton)
-    private fun dp(v: Int): Int = (v * resources.displayMetrics.density).toInt()
+    private fun Int.dp(): Int = (this * resources.displayMetrics.density).toInt()
 }

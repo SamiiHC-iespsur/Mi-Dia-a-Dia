@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="sami.pmm.midaada.TareasActivity">
+    tools:context="sami.pmm.midaada.TareasActivity"
+    tools:ignore="VisualLintBounds">
 
     <TextView
         android:id="@+id/tvTasksTitle"
@@ -80,14 +81,6 @@
             android:text="@string/tasks_filter_pending" />
     </RadioGroup>
 
-    <Space
-        android:id="@+id/bottomSpacer"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ListView
         android:id="@+id/lvTasks"
         android:layout_width="0dp"
@@ -95,8 +88,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:paddingBottom="24dp"
+        android:clipToPadding="false"
+        tools:listitem="@android:layout/simple_list_item_2"
         app:layout_constraintTop_toBottomOf="@id/rgTaskFilter"
-        app:layout_constraintBottom_toTopOf="@id/bottomSpacer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
