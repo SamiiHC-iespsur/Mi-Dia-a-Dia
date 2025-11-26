@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
 
-class ProfileActivity : AppCompatActivity() {
+class PerfilActivity : AppCompatActivity() {
 
     private lateinit var etName: TextInputEditText
     private lateinit var etEmail: TextInputEditText
@@ -18,7 +18,7 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_perfil)
 
         // Inicializar vistas
         etName = findViewById(R.id.etName)

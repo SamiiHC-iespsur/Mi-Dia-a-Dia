@@ -11,7 +11,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         // Listeners para cada botón del menú
         findViewById<Button?>(R.id.btnProfile)?.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, PerfilActivity::class.java))
         }
         findViewById<Button?>(R.id.btnTasks)?.setOnClickListener {
             startActivity(Intent(this, TareasActivity::class.java))
