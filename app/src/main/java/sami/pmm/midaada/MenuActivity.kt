@@ -1,0 +1,23 @@
+package sami.pmm.midaada
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+
+class MenuActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_menu)
+        // Listeners para cada botón del menú
+        findViewById<Button?>(R.id.btnProfile)?.setOnClickListener {
+            startActivity(Intent(this, PerfilActivity::class.java))
+        }
+        findViewById<Button?>(R.id.btnTasks)?.setOnClickListener {
+            startActivity(Intent(this, TareasActivity::class.java))
+        }
+        findViewById<Button?>(R.id.btnSettings)?.setOnClickListener {
+            startActivity(Intent(this, AjustesActivity::class.java))
+        }
+    }
+}

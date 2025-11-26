@@ -1,6 +1,8 @@
 package sami.pmm.midaada
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,11 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val btnStart = findViewById<Button>(R.id.btnStart)
+        btnStart.setOnClickListener {
+            startActivity(Intent(this, MenuActivity::class.java))
         }
     }
 }
