@@ -28,6 +28,13 @@
     <string name="tasks_filter_pending">Pendientes</string>
     <string name="tasks_empty_warning">Introduce una tarea antes de añadir</string>
 
+    <!-- Ajustes -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_dark_mode">Modo oscuro</string>
+    <string name="settings_auto_save">Guardar cambios automáticamente</string>
+    <string name="settings_reset_button">Restablecer datos</string>
+    <string name="settings_reset_message">Los datos han sido reiniciados.</string>
+
     <!-- Toasts placeholders -->
     <string name="toast_opening_profile">Abriendo Perfil…</string>
     <string name="toast_opening_settings">Abriendo Ajustes…</string>
