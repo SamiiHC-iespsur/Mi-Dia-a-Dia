@@ -3,7 +3,6 @@ package sami.pmm.midaada
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -18,8 +17,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, TareasActivity::class.java))
         }
         findViewById<Button?>(R.id.btnSettings)?.setOnClickListener {
-            Toast.makeText(this, getString(R.string.toast_opening_settings), Toast.LENGTH_SHORT).show()
-            // TODO: Implementar navegación a los ajustes
+            startActivity(Intent(this, AjustesActivity::class.java))
         }
     }
 }
